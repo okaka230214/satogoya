@@ -145,6 +145,16 @@ text-align: center;
   display: flex;
   justify-content: center;
 }
+.regular,
+.spot {
+  display: block;
+  padding-top: 24px;
+}
+
+.spot {
+  padding-bottom: 8px;
+}
+
 .section-contact {
   color: #fff;
 }
