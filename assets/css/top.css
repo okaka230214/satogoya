@@ -17,7 +17,7 @@ font-weight: var(--font-weight-bold);
 }
 
 .section-top__container{
-  background-image: url("../images/heroImageold.png");
+  background-image: url("../images/heroImage.png");
   height:60vh;
   width: 100vw;
   background-size: cover;
@@ -71,7 +71,6 @@ font-weight: var(--font-weight-bold);
 .section-price-list__container {
   max-width: 1088px;
   margin: 0 auto;
-  gap:20px;
 }
 
 .section-price-list__card {
@@ -91,16 +90,26 @@ padding: 48px 24px 48px 24px;
 }
 .section-services__container h3 {
   display: block;
-  padding-bottom: 152px;
+  position: relative;
+  padding: 1.5rem;
+  margin-bottom: 100px;
 }
+.section-services__container h3:before {
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 5px;
+  content: '';
+  padding: 1rem 2rem;
+  border-bottom: 4px dotted var(--color-base);
+}
+
 .section-services__service {
   display: flex;
   padding-bottom: 96px;
 }
 
-.section-services__service h3{
-text-align: center;
-}
 
 .section-services__image {
   width:   50%;
@@ -119,29 +128,46 @@ text-align: center;
 .section-gallery__area {
   margin-bottom:250px;
 }
-#section-price > h3{
-  display: block;
-  padding-bottom: 104px;
-}
 
 .section-price-list__container {
   display: flex;
   height: 100%;
   align-items: stretch;
   margin-bottom: 384px;
+  gap:10px;
+}
+.section-price-list h3 {
+  position: relative;
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 152px;
+}
+.section-price-list h3::before {
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 5px;
+  content: '';
+  border-bottom: 4px dotted var(--color-base);
 }
 
 .section-price-list__card {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 16px;
 }
 .section-price-list__card h4 {
   font-size: 20px;
   text-align: center;
   display: block;
-  padding: 16px 0 48px 0;
+  padding: 1rem 2rem;
+  border-top: 2px solid var(--color-base);
+  border-bottom: 2px solid var(--color-base);
+  margin:  16px 0 48px 0;
 }
-.service-image {
+.service-image img {
+  max-width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
 }
@@ -162,6 +188,18 @@ text-align: center;
 .section-contact h3 {
   padding-top: 100px;
 padding-bottom: 80px;
+position: relative;
+padding: 1.5rem;
+margin-bottom: 56px;
+}
+.section-contact h3::before {
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 5px;
+  content: '';
+  border-bottom: 4px dotted var(--color-white);
 }
 .section-content__disc {
 padding-bottom: 40px;
@@ -171,6 +209,7 @@ button {
   background-color:#E68234;
   color: #fff;
   font-size: var(--font-size-24);
+  letter-spacing: 0.2rem;
   padding: 10px 30px;
   border-radius: 40px;
   width: 300px;

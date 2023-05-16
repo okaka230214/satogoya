@@ -6,8 +6,9 @@
   font-size: 62.5%; /* 16px * 62.5% = 10px */
 
   /* TODO:あとで代替フォントを追加する */
-  --js-font-family: 'FOT-筑紫A丸ゴシック Std', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
+  --js-font-family: 'DNP 秀英丸ゴシック Std','FOT-筑紫A丸ゴシック Std', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
   --color-white: #fff;
+  --color-base:#503730;
   --font-size-32: 3.2rem;
   --font-size-24: 2.4rem;
   --font-size-14: 1.4rem;
