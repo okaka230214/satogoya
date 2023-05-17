@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
     <title>さとごや</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/common.css">
@@ -20,10 +20,10 @@
         <h1 class="logo"><a href="#"><img src="./assets/images/logo.png" alt="さとごやのロゴマーク" width="100"></a></h1>
         <nav>
           <ul class="navigation">
-            <li><a href="#section-about">さとごやについて</a></li>
-            <li><a href="#section-services">サービス一覧</a></li>
-            <li><a href="#section-price">ご利用料金</a></li>
-            <li><a href="#section-contact">お問い合わせ</a></li>
+            <li class="line"><a href="#section-about">さとごやについて</a></li>
+            <li class="line"><a href="#section-services">サービス一覧</a></li>
+            <li class="line"><a href="#section-price">ご利用料金</a></li>
+            <li class="line"><a href="#section-contact">お問い合わせ</a></li>
         </nav>
         </ul>
       </div>
@@ -135,66 +135,74 @@
             <!-- お料理代行料金 -->
             <h4>お料理代行</h4>
             <div class="service-image"><img src="./assets/images/cooking-stamp.png" alt=""></div>
-            <div class="regular"><span>定期</span></div>
-            <span>週1回、2時間より承ります。</span>
-            <table>
-              <tr>
-                <th>1時間</th>
-                <th>2,700円<span>(税別)</span></th>
-              </tr>
-              <tr>
-                <th>交通費</th>
-                <th>800円<span>(税別)</span></th>
-              </tr>
-              <tr>
-                <th>鍵預かり<span>※</span></th>
-                <th>800円<span>(税別)</span></th>
-              </tr>
-            </table>
-            <div class="spot"><span>スポット</span></div>
-            <table>
-              <tr>
-                <th>1時間</th>
-                <th>3,000円<span>(税別)</span></th>
-              </tr>
-              <tr>
-                <th>交通費</th>
-                <th>800円<span>(税別)</span></th>
-              </tr>
-            </table>
+            <div class="regular-box">
+              <div class="regular ribbon">定期</div><br>
+              <span>週1回、2時間より承ります。</span>
+              <table>
+                <tr>
+                  <td>1時間</td>
+                  <td>2,700円<span>(税別)</span></td>
+                </tr>
+                <tr>
+                  <td>交通費</td>
+                  <td>800円<span>(税別)</span></td>
+                </tr>
+                <tr>
+                  <td>鍵預かり<span>※</span></td>
+                  <td>800円<span>(税別)</span></td>
+                </tr>
+              </table>
+            </div>
+            <div class="sopt-box">
+              <div class="spot ribbon">スポット</div>
+              <table>
+                <tr>
+                  <td>1時間</td>
+                  <td>3,000円<span>(税別)</span></td>
+                </tr>
+                <tr>
+                  <td>交通費</td>
+                  <td>800円<span>(税別)</span></td>
+                </tr>
+              </table>
+            </div>
           </div>
           <!-- お掃除代行料金 -->
           <div class="section-price-list__card">
             <h4>お掃除代行</h4>
             <div class="service-image"><img src="./assets/images/cleaning-stamp.png" alt=""></div>
-            <div class="regular"><span>定期</span></div>
-            <span>週1回、2時間より承ります。</span>
-            <table>
-              <tr>
-                <th>1時間</th>
-                <th>3,000円<span>(税別)</span></th>
-              </tr>
-              <tr>
-                <th>交通費</th>
-                <th>800円<span>(税別)</span></th>
-              </tr>
-              <tr>
-                <th>鍵預かり<span>※</span></th>
-                <th>800円<span>(税別)</span></th>
-              </tr>
-            </table>
-            <div class="spot"><span>スポット</span></div>
-            <table>
-              <tr>
-                <th>1時間</th>
-                <th>3,300円<span>(税別)</span></th>
-              </tr>
-              <tr>
-                <th>交通費</th>
-                <th>800円<span>(税別)</span></th>
-              </tr>
-            </table>
-            <div>
+            <div class="regular-box">
+              <div class="regular ribbon">定期</div><br>
+              <span>週1回、2時間より承ります。</span>
+              <table>
+                <tr>
+                  <td>1時間</td>
+                  <td>3,000円<span>(税別)</span></td>
+                </tr>
+                <tr>
+                  <td>交通費</td>
+                  <td>800円<span>(税別)</span></td>
+                </tr>
+                <tr>
+                  <td>鍵預かり<span>※</span></td>
+                  <td>800円<span>(税別)</span></td>
+                </tr>
+              </table>
+            </div>
+            <div class="spot-box">
+              <div class="spot ribbon">スポット</div>
+              <table>
+                <tr>
+                  <td>1時間</td>
+                  <td>3,300円<span>(税別)</span></td>
+                </tr>
+                <tr>
+                  <td>交通費</td>
+                  <td>800円<span>(税別)</span></td>
+                </tr>
+              </table>
+            </div>
+            <div class="attention">
               ・排水溝や排水管の掃除は本メニューに含まれておりません。<br>・家具の移動が必要な場合は「その他」にて別途お見積となりますまた、家具の重量により移動が難しいものもありますので、ご相談させていただけますと幸いです。
             </div>
           </div>
@@ -202,30 +210,32 @@
           <div class="section-price-list__card">
             <h4>空間コーディネート</h4>
             <div class="service-image"><img src="./assets/images/room-cordinate-stamp.png" alt=""></div>
-            <div class="spot"><span>スポット</span></div>
-            <table>
-              <tr>
-                <th>1時間</th>
-                <th>3,000円<span>(税別)</span></th>
-              </tr>
-              <tr>
-                <th>1箇所</th>
-                <th>3,000円<span>(税別)</span></th>
-              </tr>
-              <tr>
-                <th>交通費</th>
-                <th>800円<span>(税別)</span></th>
-              </tr>
-            </table>
-            <div>・家具の移動や運搬設置は本メニューに含まれておりません「その他」にて別途お見積となります。</div>
+            <div class="spot-box">
+              <div class="spot ribbon">スポット</div>
+              <table>
+                <tr>
+                  <td>1時間</td>
+                  <td>3,000円<span>(税別)</span></td>
+                </tr>
+                <tr>
+                  <td>1箇所</td>
+                  <td>3,000円<span>(税別)</span></td>
+                </tr>
+                <tr>
+                  <td>交通費</td>
+                  <td>800円<span>(税別)</span></td>
+                </tr>
+              </table>
+            </div>
+            <div class="attention">・家具の移動や運搬設置は本メニューに含まれておりません「その他」にて別途お見積となります。</div>
           </div>
 
           <!-- その他料金 -->
           <div class="section-price-list__card">
             <h4>その他</h4>
             <div class="service-image"><img src="./assets/images/etc-stamp.png" alt=""></div>
-            <div>別途お見積り</div>
-            <div>・メニューにないご要望については、ご相談ください。</div>
+            <div class="etc-desc">別途お見積り</div>
+            <div class="attention">・メニューにないご要望については、ご相談ください。</div>
           </div>
         </div>
       </section>
@@ -251,6 +261,8 @@
         <small class="right">©2023 さとごや All Rights Reserved.</small>
       </section>
 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="./assets/js/common.js"></script>
 
   </body>
 

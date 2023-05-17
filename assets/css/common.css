@@ -6,9 +6,11 @@
   font-size: 62.5%; /* 16px * 62.5% = 10px */
 
   /* TODO:あとで代替フォントを追加する */
-  --js-font-family: 'DNP 秀英丸ゴシック Std','FOT-筑紫A丸ゴシック Std', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
+  --js-font-family: YakuHanJP,'DNP 秀英丸ゴシック Std','FOT-筑紫A丸ゴシック Std', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
   --color-white: #fff;
   --color-base:#503730;
+  --color-orange:#E68234;
+  --color-green:#498F49;
   --font-size-32: 3.2rem;
   --font-size-24: 2.4rem;
   --font-size-14: 1.4rem;
@@ -17,7 +19,7 @@
   --font-weight-bold: 600;
   --font-weight-thin: 400;
   --line-height: 1.8;
-  --letter-spacing: 0.8 ;
+  --letter-spacing: 0.7 ;
 }
 
 head,
@@ -30,7 +32,6 @@ main {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: var(--line-height);
-  text-align: left;
   letter-spacing: var(--letter-spacing);
 }
 

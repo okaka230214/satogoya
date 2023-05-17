@@ -10,11 +10,28 @@
   height:80px;
   display: flex ;
   justify-content: space-between;
+  position: fixed;
   }
 .navigation {
 display: inline-flex;
-gap:64px;
+gap:40px;
 font-weight: var(--font-weight-bold);
+}
+.line {
+  padding-bottom: 8px;
+  background: 
+      linear-gradient(rgb(230,130,52,0.6) 0 0) 
+      bottom /var(--d, 0%) 3px
+      no-repeat;
+  transition:0.5s;
+}
+.line:hover {
+  --d: 90%;
+}
+
+.header-container.scroll {
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
 }
 
 /* メインビジュアル */
@@ -58,19 +75,33 @@ font-weight: var(--font-weight-bold);
 .section-about__desc {
   display: inline;
 }
+.section-about__desc h2 {
+  padding-bottom: 48px;
+}
+.section-about__desc span {
+  font-size: var(--font-size-24);
+  display: block;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--color-base);
+}
+
 #section-about > div > div.section-about__image > img {
   vertical-align: bottom;
   border-radius: 5px;
 }
 
 /* サービス一覧 */
+#section-services{
+  margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
+padding-top: 80px; /* 打ち消し用のパディング */
+}
 #section-services > div > div > div > div.section-services__image > img
 {
   border-radius: 5px;
   vertical-align: bottom;
 }
 #section-services > div {
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 .section-services__container {
   max-width: 1088px;
@@ -129,7 +160,7 @@ font-weight: var(--font-weight-bold);
 }
 
 .section-services__disc p {
-  padding-bottom: 24px;
+  padding-bottom: 48px;
 }
 .section-services__examples{
   position: relative;
@@ -148,8 +179,8 @@ font-weight: var(--font-weight-bold);
   left: 0;
   width: 50px;
   height: 50px;
-  border-top: 1px solid #000;
-  border-left: 1px solid #000;
+  border-top: 1px solid var(--color-base);
+  border-left: 1px solid var(--color-base);
 }
 .section-services__examples::before
 {
@@ -157,8 +188,8 @@ font-weight: var(--font-weight-bold);
   bottom: 0;
   width: 50px;
   height: 50px;
-  border-right: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-right: 1px solid var(--color-base);
+  border-bottom: 1px solid var(--color-base);
 }
 .section-services__service:nth-of-type(even) {
   flex-direction: row-reverse;
@@ -172,13 +203,20 @@ font-weight: var(--font-weight-bold);
 }
 
 /* 料金表 */
+#section-price {
+  margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
+padding-top: 80px; /* 打ち消し用のパディング */
+}
 .section-price-list__container {
   max-width: 1088px;
   margin: 0 auto;
 }
 .section-price-list__card {
-background-color: #fff;
+background-image: url(../images/card-bg.png);
 padding: 48px 24px 48px 24px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 }
 .section-price-list__card span {
   font-size: 1rem;
@@ -214,8 +252,8 @@ padding: 48px 24px 48px 24px;
   text-align: center;
   display: block;
   padding: 1rem 2rem;
-  border-top: 2px solid var(--color-base);
-  border-bottom: 2px solid var(--color-base);
+  border-top: 1px solid var(--color-base);
+  border-bottom: 1px solid var(--color-base);
   margin:  16px 0 48px 0;
 }
 .service-image img {
@@ -224,55 +262,80 @@ padding: 48px 24px 48px 24px;
   display: flex;
   justify-content: center;
 }
-.regular{
-  line-height: 60px;
-  position: relative;
-  height: 60px;
-  margin: 2em 50px 1em;
-  padding: 0 2rem;
-  text-align: center;
-  color: #fff;
-  background: #3D9169;
-}
-.regular::before,
-.regular::after
-{
-  position: absolute;
-  top: 0;
-  display: block;
-  height: 48px;
-  content: '';
-  border: 30px solid #3D9169;
-}
-.regular::before
-{
-  left: -40px;
-  border-left-width: 15px;
-  border-left-color: transparent;
-}
-.regular::after
-{
-  right: -40px;
-  border-right-width: 15px;
-  border-right-color: transparent;
-}
-.regular span {
-  position: relative;
-  display: block;
-}
 
+/* リボン */
+.ribbon {
+  margin-top: 16px;
+  display: inline-block;
+  position: relative;
+  height: 40px;/*高さ*/
+  line-height: 40px;/*高さ*/
+  text-align: center;
+  padding: 0 40px 0 18px;/*文字の左右の余白*/
+  font-size: 18px;/*文字サイズ*/
+  background: var(--color-green);/*背景色*/
+  color: #FFF;/*文字色*/
+  box-sizing: border-box;
+}
+.ribbon:after {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+.ribbon:after {
+  top: 0;
+  right: 0;
+  border-width: 20px 15px 20px 0px;
+  border-color: transparent #F5F1EF transparent transparent;
+  border-style: solid;
+}
 .spot {
   padding-bottom: 8px;
+  background: var(--color-base);/*背景色*/
+}
+.section-price-list__card table {
+margin-top: 16px;
+width: 168px;
+}
+#section-price > div > div:nth-child(1) > table:nth-child(6) > tbody > tr:nth-child > td:nth-child {
+  padding: 8px;
+}
+.regular-box {
+  margin-bottom: 24px;
+}
+.spot-box {
+  margin-bottom: 8px;
+}
+.etc-desc {
+  font-weight: var(--font-weight-bold);
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+
+table tr td:nth-of-type(2){
+  text-align:right;
+  font-weight:var(--font-weight-bold);
+}
+table tr td:nth-of-type(2) span {
+  font-weight:500;
+}
+.attention {
+font-size: 1.2rem;
 }
 
 
 /* お問い合わせ */
+#section-contact {
+    margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
+  padding-top: 80px; /* 打ち消し用のパディング */
+  }
 .section-contact {
   color: #fff;
 }
-.section-contact h3 {
-  padding-top: 100px;
-padding-bottom: 80px;
+.section-contact__container h3 {
 position: relative;
 padding: 1.5rem;
 margin-bottom: 56px;
@@ -291,8 +354,8 @@ padding-bottom: 40px;
 }
 button {
   font-family: var(--js-font-family);
-  background-color:#E68234;
-  color: #fff;
+  background-color:var(--color-orange);
+  color: var(--color-white);
   font-size: var(--font-size-24);
   letter-spacing: 0.2rem;
   padding: 10px 30px;
@@ -309,11 +372,12 @@ button:hover {
   opacity: 0.6;
 }
 .section-contact__container {
-  text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 100px;
 }
 
 .section-footer__menu ul {
@@ -328,6 +392,9 @@ button:hover {
 
 .section-footer__container {
   background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .right {
