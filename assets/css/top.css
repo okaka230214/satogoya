@@ -47,6 +47,7 @@ position: relative;
 }
 .section-top__container img {
   width: 100%;
+  height: auto;
 }
 .section-top__disc {
 position: absolute;
@@ -73,6 +74,7 @@ top:25%;
 
 /* あいさつ */
 .section-greeting__desc h2 {
+  margin-top: -170px;
   padding-bottom: 40px;
 }
 .section-greeting {
