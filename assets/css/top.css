@@ -36,19 +36,18 @@ font-weight: var(--font-weight-bold);
 
 /* メインビジュアル */
 .section-top__container{
-  background-image: url("../images/heroImageold.png");
-  height:70vh;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  justify-content: space-between;
-  background-position:25% 25%;
-  display: flex;
-  align-items: center;
-  margin-bottom: 80px;
+  position: relative;
 }
-.section-top__slide01 {
-background-image: url("../images/kitchen.png");
+.section-top__container img {
+  padding-top: 80px;
+  margin-bottom: 80px;
+  height: auto;
+  width: 100%;
+}
+.section-top__disc {
+position: absolute;
+top:25%;
+
 }
 .section-top__disc h1 {
   display: block;
