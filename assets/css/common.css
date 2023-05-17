@@ -35,7 +35,6 @@ main {
   letter-spacing: var(--letter-spacing);
 }
 
-.section-top,
 .section-greeting,
 .section-about,
 .section-services,
@@ -44,6 +43,11 @@ main {
   padding-left: 10vw;
   padding-right: 4vw;
 }
+.section-top {
+  padding-left: 10vw;
+}
+
+
 /* @media (min-width:) {
   /* TODO:後で書く */
 /* } */
@@ -73,7 +77,7 @@ font-size: var(--font-size-32);
 
 h3
 {
-  font-size: var(--font-size-24);
+  font-size: var(--font-size-32);
   text-align: center;
 }
 

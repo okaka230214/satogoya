@@ -36,15 +36,19 @@ font-weight: var(--font-weight-bold);
 
 /* メインビジュアル */
 .section-top__container{
-  background-image: url("../images/heroImage.png");
-  height:60vh;
-  width: 100vw;
+  background-image: url("../images/heroImageold.png");
+  height:70vh;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: space-between;
+  background-position:25% 25%;
   display: flex;
   align-items: center;
   margin-bottom: 80px;
+}
+.section-top__slide01 {
+background-image: url("../images/kitchen.png");
 }
 .section-top__disc h1 {
   display: block;
@@ -100,9 +104,14 @@ padding-top: 80px; /* 打ち消し用のパディング */
   border-radius: 5px;
   vertical-align: bottom;
 }
-#section-services > div {
-  background-color: var(--color-white);
+.section-service__wrapper {
+  background-image: url(/assets/images/合体\ 1.png);
+  background-repeat: no-repeat;
+  background-position: top;
 }
+/* #section-services > div {
+  background-color: var(--color-white);
+} */
 .section-services__container {
   max-width: 1088px;
   margin: 0 auto;
@@ -111,7 +120,8 @@ padding-top: 80px; /* 打ち消し用のパディング */
 .section-services__container h3 {
   display: block;
   position: relative;
-  padding: 1.5rem;
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
   margin-bottom: 100px;
 }
 .section-services__container h3:before {
@@ -195,9 +205,15 @@ padding-top: 80px; /* 打ち消し用のパディング */
   flex-direction: row-reverse;
 }
 /* ギャラリー */
-.section-gallery__area {
+.section-gallery {
+  background-color: var(--color-white);
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-bottom:250px;
+  width: 100%;
 }
+
+
 .section-gallery__image img {
   vertical-align: bottom;
 }
@@ -232,7 +248,7 @@ background-position: center;
   position: relative;
   padding: 1.5rem;
   text-align: center;
-  margin-bottom: 152px;
+  margin-bottom: 100px;
 }
 .section-price-list h3::before {
   position: absolute;
@@ -261,6 +277,7 @@ background-position: center;
   height: auto;
   display: flex;
   justify-content: center;
+  margin-bottom: 32px;
 }
 
 /* リボン */
