@@ -11,6 +11,7 @@
   display: flex ;
   justify-content: space-between;
   position: fixed;
+  z-index: 999;
   }
 .navigation {
 display: inline-flex;
@@ -35,19 +36,32 @@ font-weight: var(--font-weight-bold);
 }
 
 /* メインビジュアル */
-.section-top__container{
-  position: relative;
+.section-top__container {
+position: relative;
+}
+
+.hero-slide {
+  margin-inline: auto;
+  overflow: hidden;
+  height: 54vw;
 }
 .section-top__container img {
-  padding-top: 80px;
-  margin-bottom: 80px;
-  height: auto;
   width: 100%;
 }
 .section-top__disc {
 position: absolute;
 top:25%;
-
+}
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15); /* 拡大率 */
+  }
+}
+.add-animation {
+  animation: zoomUp 10s linear 0s normal both;
 }
 .section-top__disc h1 {
   display: block;
@@ -396,21 +410,25 @@ button:hover {
   padding-top: 100px;
 }
 
+.section-footer__container {
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* フッター */
+.section-footer {
+  background-color: var(--color-white);
+}
 .section-footer__menu ul {
   justify-content: center;
   display: flex;
   gap: 40px;
 }
 .section-footer__menu {
-  padding-top: 32px;
-  padding-bottom: 54px;
-}
-
-.section-footer__container {
-  background-image: url(../images/bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  padding-top: 24px;
+  padding-bottom: 100px;
 }
 
 .right {
