@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 /* ヘッダー */
+.logo img {
+width: 120px;
+position: absolute;
+top: 20px;
+}
 .header-container { 
   width:100%;
   background-color: #fff;
@@ -52,6 +57,8 @@ position: relative;
 .section-top__disc {
 position: absolute;
 top:25%;
+color: var(--color-white);
+text-shadow: 1px 2px 20px #808080;
 }
 @keyframes zoomUp {
   0% {
@@ -74,11 +81,19 @@ top:25%;
 
 /* あいさつ */
 .section-greeting__desc h2 {
-  margin-top: -170px;
+  margin-top: -120px;
   padding-bottom: 40px;
 }
 .section-greeting {
   margin-bottom: 700px;
+}
+.test {
+  z-index: 1;
+}
+
+.section-greeting__desc {
+  position:absolute;
+  z-index: 10000;
 }
 
 
@@ -120,13 +135,11 @@ padding-top: 80px; /* 打ち消し用のパディング */
   vertical-align: bottom;
 }
 .section-service__wrapper {
-  background-image: url(/assets/images/合体\ 1.png);
+  background-image: url(/assets/images/service-bg.png);
   background-repeat: no-repeat;
   background-position: top;
 }
-/* #section-services > div {
-  background-color: var(--color-white);
-} */
+
 .section-services__container {
   max-width: 1088px;
   margin: 0 auto;
