@@ -58,35 +58,29 @@ $(function () {
 });
 
 
-// gspa
-// gsap.to('.test', { //アニメーションしたい要素を指定
-//   x: 800, //横に800px動かす
-//   scrollTrigger: {
-//     markers: true,
-//     trigger: '.section-greeting__desc',//アニメーションが始まるトリガーとなる要素
-//     start: 'top center', //アニメーションが始まる位置を指定
-//   }
-// });
+// // gspa
+// gsap.to(".test-wrap .test", { //動かしたい対象
+//   duration: 3, //動かす内容
+//   paused: true,
+//   scale: 4,
+//   ease: "power2.out",
+//   width: "100%",
+//   height: "100px",
+//   lineHeight: "100px",
+//   borderRadius: "0%",
+//   top: 0,
+//   backgroundColor: "#E8E3DB",
 
-gsap.to(".test", {
-  duration: 3,
-  paused: true,
-  scale: 4,
-  ease: "power2.out",
-  width: "100%",
-  height: "100px",
-  lineHeight: "100px",
-  borderRadius: "0%",
-  top: 0,
-  backgroundColor: "#E8E3DB",
-  // y: 300,
-  // rotate: 360,
-  // scale: 10,
-  // duration: 2,
-  scrollTrigger:{
-  markers:true,
-  trigger: '.section-greeting__desc',//アニメーションが始まるトリガーとなる要素
-    start: 'top center', //アニメーションが始まる位置を指定}
-    scrub: true
-  }
-  });
+//   // y: 300,
+//   // rotate: 360,
+//   // scale: 10,
+//   // duration: 2,
+//   scrollTrigger:{
+//   markers:true,
+//   trigger: '.section-greeting__desc',//アニメーションが始まるトリガーとなる要素
+//     start: 'top center', //アニメーションが始まる位置を指定}
+//     end:'bottom top',
+//     scrub: true
+//   }
+//   });
+

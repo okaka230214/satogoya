@@ -16,7 +16,7 @@ top: 20px;
   display: flex ;
   justify-content: space-between;
   position: fixed;
-  z-index: 999;
+  z-index: 120000;
   }
 .navigation {
 display: inline-flex;
@@ -85,14 +85,11 @@ text-shadow: 1px 2px 20px #808080;
   padding-bottom: 40px;
 }
 .section-greeting {
-  margin-bottom: 700px;
-}
-.test {
-  z-index: 1;
+  margin-bottom: 300px;
 }
 
 .section-greeting__desc {
-  position:absolute;
+  position:relative;
   z-index: 10000;
 }
 
@@ -127,7 +124,7 @@ text-shadow: 1px 2px 20px #808080;
 /* サービス一覧 */
 #section-services{
   margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
-padding-top: 80px; /* 打ち消し用のパディング */
+padding-top: 80px;
 }
 #section-services > div > div > div > div.section-services__image > img
 {
@@ -376,6 +373,8 @@ font-size: 1.2rem;
 #section-contact {
     margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
   padding-top: 80px; /* 打ち消し用のパディング */
+  position:relative;
+  z-index: 10000;
   }
 .section-contact {
   color: #fff;
@@ -434,6 +433,8 @@ button:hover {
 
 /* フッター */
 .section-footer {
+  position:relative;
+  z-index: 10000;
   background-color: var(--color-white);
 }
 .section-footer__menu ul {
