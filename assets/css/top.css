@@ -96,7 +96,7 @@ div.wrap-bg {
   padding-bottom: 40px;
 }
 .section-greeting {
-  margin-bottom: 300px;
+  margin-bottom: 250px;
 }
 
 .section-greeting__desc {
@@ -301,7 +301,7 @@ background-position: center;
   border-radius: 16px;
 }
 .section-price-list__card h4 {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   display: block;
   padding: 1rem 2rem;
@@ -368,7 +368,6 @@ width: 168px;
   margin-bottom: 8px;
 }
 
-
 table tr td:nth-of-type(2){
   text-align:right;
   font-weight:var(--font-weight-bold);
@@ -380,14 +379,29 @@ table tr td:nth-of-type(2) span {
 font-size: 1.2rem;
 }
 
+#section-voice {
+  margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
+  padding-top: 80px; /* 打ち消し用のパディング */
+}
+
+.section-voice h3::before {
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 5px;
+  content: '';
+  border-bottom: 4px dotted var(--color-white);
+}
 
 /* お問い合わせ */
 #section-contact {
-    margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
+  margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
   padding-top: 80px; /* 打ち消し用のパディング */
-  position:relative;
-  z-index: 10000;
   }
+.section-voice__container {
+  position: relative;
+}
 .section-contact {
   color: #fff;
 }
@@ -467,8 +481,7 @@ button:hover {
   opacity: 0.8;
 }
 
-TODO: 背景色を入れる
-TODO:　三角の画像を作成する
-TODO: 文字と画像がふんわり現れるエフェクトかける
-TODO: フォントを見直す
+
 TODO:パララックスエフェクトかける
+TODO：ボタンの透過をやめ、アクションを付ける
+TODO:https://codepen.io/natszafraniec/pen/eYMPEaM

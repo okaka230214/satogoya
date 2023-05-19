@@ -19,8 +19,8 @@
   --font-size-10: 1rem;
   --font-weight-bold: 600;
   --font-weight-thin: 400;
-  --line-height: 1.8;
-  --letter-spacing: 0.7 ;
+  --line-height: 2;
+  --letter-spacing: 0.1rem;
 }
 
 head,
@@ -29,11 +29,10 @@ main {
   /* background-color: #F2F2F2; */
   width: 100%;
   color: #503730; /* RGB */
-  font-family: 'FOT-筑紫A丸ゴシック Std', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
-  font-weight: 500;
+  font-family:var(--js-font-family);
+  font-weight: 400;
   font-size: 1.6rem;
   line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
 }
 
 .section-greeting,

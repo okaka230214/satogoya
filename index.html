@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>さとごや</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script> -->
     <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/top.css">
     <link rel="shortcut icon" href="./assets/images/common/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="apple-touch-icon" href="./assets/images/common/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </head>
 
   <body>
@@ -27,6 +29,7 @@
             <li class="line"><a href="#section-about">さとごやについて</a></li>
             <li class="line"><a href="#section-services">サービス一覧</a></li>
             <li class="line"><a href="#section-price">ご利用料金</a></li>
+            <li class="line"><a href="#voice">お客様の声</a></li>
             <li class="line"><a href="#section-contact">お問い合わせ</a></li>
         </nav>
         </ul>
@@ -42,7 +45,8 @@
             <img src="./assets/images/clean.png" alt="">
           </div>
           <div class="section-top__disc">
-            <h1>温かいご飯<br>きれいなお部屋<br>健康な毎日を<br>過ごしませんか</h1>
+            <h1 class="wow animate__animated animate__fadeIn" data-wow-duration="2s">
+              温かいご飯<br>きれいなお部屋<br>健康な毎日を<br>過ごしませんか</h1>
           </div>
         </div>
       </section>
@@ -50,8 +54,9 @@
       <section class="section-greeting">
         <div class="section-greeting__container">
           <div class="section-greeting__desc">
-            <h2>毎日ご飯や掃除、繰り返す日々、<br>お仕事や育児に奮闘している皆様のお力になりたい。</h2>
-            <p>
+            <h2 class="wow animate__animated animate__fadeIn" data-wow-duration="2s">
+              毎日ご飯や掃除、繰り返す日々、<br>お仕事や育児に奮闘している皆様のお力になりたい。</h2>
+            <p class="wow animate__animated animate__fadeIn" data-wow-duration="2s">
               そんな思いで「さとごや」を始めました。<br>「お母さんのような温かいご飯と心遣い」をモットーに忙しい日々に少しでもゆとりができるよう<br>お手伝いさせて頂いております。ご家族の健康的な毎日のお役にたてて頂いたら幸いです。
             </p>
           </div>
@@ -61,68 +66,80 @@
         </div>
       </section>
 
-      <div class="rectangle"><img src="./assets/images/rectangle.svg" alt=""></div>
+      <div class="rectangle"><img src="./assets/images/rectangle.svg" alt="背景画像"></div>
 
       <div class="wrap-bg">
         <!-- aboutセクション -->
         <section id="section-about" class="section-about">
           <div class="section-about__container">
-            <div class="section-about__desc">
-              <h2>さとごやについて</h2>
-              <span>ほかぞのさとこ</span>
-              <p>現在小学校と中学校の子育て中。<br>2019年より家事代行を始め、2021年4月に「さとごや」を開業。<br>年間250件程のご依頼を受けております。</p>
+            <div class="section-about__desc wow animate__animated animate__fadeIn">
+              <h2 class="wow animate__animated animate__fadeIn" data-wow-duration="2s">さとごやについて</h2>
+              <span class="wow animate__animated animate__fadeIn" data-wow-duration="2s">ほかぞのさとこ</span>
+              <p class="wow animate__animated animate__fadeIn" data-wow-duration="2s">
+                現在小学校と中学校の子育て中。<br>2019年より家事代行を始め、2021年4月に「さとごや」を開業。<br>年間250件程のご依頼を受けております。</p>
             </div>
-            <div class="section-about__image"><img src="./assets/images/aboutImage.png" alt="紹介写真"></div>
+            <div class="section-about__image wow animate__animated animate__fadeIn" data-wow-duration="3s"><img
+                src="./assets/images/aboutImage.png" alt="紹介写真"></div>
           </div>
         </section>
+
         <!-- serviceセクション -->
         <!-- お料理代行 -->
         <section id="section-services" class="section-services">
           <div class="section-service__wrapper">
             <div class="section-services__container">
               <!-- <div class="circle"><img src="./assets/images" alt=""></div> -->
-              <h3><span>サービス一覧</span></h3>
+              <h3 class="wow animate__animated animate__fadeIn" data-wow-duration="2s">サービス一覧</h3>
               <div class="section-services__service">
-                <div class="section-services__image"><img src="./assets/images/cooking.png" alt="お料理代行写真"></div>
+                <div class="section-services__image wow animate__animated animate__fadeIn" data-wow-duration="2s"><img
+                    src=" ./assets/images/cooking.png" alt="お料理代行写真"></div>
                 <div class="section-services__disc">
-                  <h4><span>お料理代行</span></h4>
-                  <p>お宅に訪問し、料理をお作りいたします。</p>
-                  <div class="section-services__examples">サービス例<br>・2時間 5品以上(メイン2品 副菜3品以上)<br>・3時間 8品以上(メイン4品 副菜4品以上)
+                  <h4 class="wow animate__animated animate__fadeIn" data-wow-duration="2s"><span>お料理代行</span></h4>
+                  <p class="wow animate__animated animate__fadeIn" data-wow-duration="2s">お宅に訪問し、料理をお作りいたします。</p>
+                  <div class="section-services__examples wow animate__animated animate__fadeIn" data-wow-duration="2s">
+                    サービス例<br>・2時間 5品以上(メイン2品 副菜3品以上)<br>・3時間 8品以上(メイン4品 副菜4品以上)
                   </div>
                 </div>
               </div>
               <!-- お掃除代行 -->
               <div class="section-services__service">
-                <div class="section-services__image"><img src="./assets/images/cleaning.png" alt="お掃除代行写真">
+                <div class="section-services__image wow animate__animated animate__fadeIn" data-wow-duration="2s"><img
+                    src="./assets/images/cleaning.png" alt="お掃除代行写真">
                 </div>
                 <div class="section-services__disc">
-                  <h4><span>お掃除代行</span></h4>
-                  <p>お部屋の片付け(掃除機がけ、ぞうきんがけ、洗たく、たたみもの)や収納・水回りの清掃(台所、トイレ、洗面所、お風呂など)をいたします。</p>
-                  <div class="section-services__examples">サービス例<br>・ご指示の3箇所の清掃 (台所、トイレ、お風呂場、洗面所から選択)
+                  <h4 class="wow animate__animated animate__fadeIn" data-wow-duration="2s"><span>お掃除代行</span></h4>
+                  <p class="wow animate__animated animate__fadeIn" data-wow-duration="2s">
+                    お部屋の片付け(掃除機がけ、ぞうきんがけ、洗たく、たたみもの)や収納・水回りの清掃(台所、トイレ、洗面所、お風呂など)をいたします。</p>
+                  <div class="section-services__examples wow animate__animated animate__fadeIn" data-wow-duration="2s">
+                    サービス例<br>・ご指示の3箇所の清掃 (台所、トイレ、お風呂場、洗面所から選択)
                   </div>
                 </div>
               </div>
               <!-- 空間コーディネート -->
               <div class="section-services__service">
-                <div class="section-services__image"><img src="./assets/images/room-cordinate.png" alt="空間コーディネート写真">
+                <div class="section-services__image wow animate__animated animate__fadeIn" data-wow-duration="2s"><img
+                    src="./assets/images/room-cordinate.png" alt="空間コーディネート写真">
                 </div>
                 <div class="section-services__disc">
-                  <h4><span>空間コーディネート</span></h4>
-                  <p>お部屋のコーディネート提案をいたします。</p>
-                  <div class="section-services__examples">サービス例<br>・子供部屋の収納を増やすためお部屋を採寸し家具をご提案</div>
+                  <h4 class="wow animate__animated animate__fadeIn" data-wow-duration="2s"><span>空間コーディネート</span></h4>
+                  <p class="wow animate__animated animate__fadeIn" data-wow-duration="2s">お部屋のコーディネート提案をいたします。</p>
+                  <div class="section-services__examples wow animate__animated animate__fadeIn" data-wow-duration="2s">
+                    サービス例<br>・子供部屋の収納を増やすためお部屋を採寸し家具をご提案</div>
                 </div>
               </div>
               <!-- その他 -->
               <div class="section-services__service">
-                <div class="section-services__image"><img src="./assets/images/etc.png" alt="その他写真"></div>
+                <div class="section-services__image wow animate__animated animate__fadeIn" data-wow-duration="2s"><img
+                    src="./assets/images/etc.png" alt="その他写真"></div>
                 <div class="section-services__disc">
-                  <h4><span>その他</span></h4>
-                  <p>メニューにないご要望については、ご相談ください</p>
+                  <h4 class="wow animate__animated animate__fadeIn" data-wow-duration="2s"><span>その他</span></h4>
+                  <p class="wow animate__animated animate__fadeIn" data-wow-duration="2s">メニューにないご要望については、ご相談ください</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
         <!-- ギャラリー -->
         <section class="section-gallery">
           <div class="section-gallery__area">
@@ -139,12 +156,12 @@
         </section>
         <!-- 料金一覧 -->
         <section id="section-price" class="section-price-list">
-          <h3><span>ご利用料金</span></h3>
+          <h3 class="wow animate__animated animate__fadeIn" data-wow-duration="2s">ご利用料金</h3>
           <div class="section-price-list__container">
-            <div class="section-price-list__card">
+            <div class="section-price-list__card animate__animated animate__fadeIn" data-wow-duration="2s">
               <!-- お料理代行料金 -->
               <h4>お料理代行</h4>
-              <div class="service-image"><img src="./assets/images/cooking-stamp.png" alt=""></div>
+              <div class=" service-image"><img src="./assets/images/cooking-stamp.png" alt=""></div>
               <div class="regular-box">
                 <div class="regular ribbon">定期</div><br>
                 <span>週1回、2時間より承ります。</span>
@@ -178,84 +195,94 @@
               </div>
             </div>
             <!-- お掃除代行料金 -->
-            <div class="section-price-list__card">
+            <div class="section-price-list__card animate__animated animate__fadeIn" data-wow-duration="2s"">
               <h4>お掃除代行</h4>
-              <div class="service-image"><img src="./assets/images/cleaning-stamp.png" alt=""></div>
-              <div class="regular-box">
-                <div class="regular ribbon">定期</div><br>
-                <span>週1回、2時間より承ります。</span>
-                <table>
-                  <tr>
-                    <td>1時間</td>
-                    <td>3,000円<span>(税別)</span></td>
-                  </tr>
-                  <tr>
-                    <td>交通費</td>
-                    <td>800円<span>(税別)</span></td>
-                  </tr>
-                  <tr>
-                    <td>鍵預かり<span>※</span></td>
-                    <td>800円<span>(税別)</span></td>
-                  </tr>
-                </table>
-              </div>
-              <div class="spot-box">
-                <div class="spot ribbon">スポット</div>
-                <table>
-                  <tr>
-                    <td>1時間</td>
-                    <td>3,300円<span>(税別)</span></td>
-                  </tr>
-                  <tr>
-                    <td>交通費</td>
-                    <td>800円<span>(税別)</span></td>
-                  </tr>
-                </table>
-              </div>
-              <div class="attention">
-                ・排水溝や排水管の掃除は本メニューに含まれておりません。<br>・家具の移動が必要な場合は「その他」にて別途お見積となりますまた、家具の重量により移動が難しいものもありますので、ご相談させていただけますと幸いです。
-              </div>
+              <div class=" service-image"><img src="./assets/images/cleaning-stamp.png" alt=""></div>
+            <div class="regular-box">
+              <div class="regular ribbon">定期</div><br>
+              <span>週1回、2時間より承ります。</span>
+              <table>
+                <tr>
+                  <td>1時間</td>
+                  <td>3,000円<span>(税別)</span></td>
+                </tr>
+                <tr>
+                  <td>交通費</td>
+                  <td>800円<span>(税別)</span></td>
+                </tr>
+                <tr>
+                  <td>鍵預かり<span>※</span></td>
+                  <td>800円<span>(税別)</span></td>
+                </tr>
+              </table>
             </div>
-            <!-- 空間コーディネート料金 -->
-            <div class="section-price-list__card">
-              <h4>空間コーディネート</h4>
-              <div class="service-image"><img src="./assets/images/room-cordinate-stamp.png" alt=""></div>
-              <div class="spot-box">
-                <div class="spot ribbon">スポット</div>
-                <table>
-                  <tr>
-                    <td>1時間</td>
-                    <td>3,000円<span>(税別)</span></td>
-                  </tr>
-                  <tr>
-                    <td>1箇所</td>
-                    <td>3,000円<span>(税別)</span></td>
-                  </tr>
-                  <tr>
-                    <td>交通費</td>
-                    <td>800円<span>(税別)</span></td>
-                  </tr>
-                </table>
-              </div>
-              <div class="attention">・家具の移動や運搬設置は本メニューに含まれておりません「その他」にて別途お見積となります。</div>
+            <div class="spot-box">
+              <div class="spot ribbon">スポット</div>
+              <table>
+                <tr>
+                  <td>1時間</td>
+                  <td>3,300円<span>(税別)</span></td>
+                </tr>
+                <tr>
+                  <td>交通費</td>
+                  <td>800円<span>(税別)</span></td>
+                </tr>
+              </table>
             </div>
-            <!-- その他料金 -->
-            <div class="section-price-list__card">
-              <h4>その他</h4>
-              <div class="service-image"><img src="./assets/images/etc-stamp.png" alt=""></div>
-              <div class="etc-desc">別途お見積り</div>
-              <div class="attention">・メニューにないご要望については、ご相談ください。</div>
+            <div class="attention">
+              ・排水溝や排水管の掃除は本メニューに含まれておりません。<br>・家具の移動が必要な場合は「その他」にて別途お見積となりますまた、家具の重量により移動が難しいものもありますので、ご相談させていただけますと幸いです。
             </div>
           </div>
-        </section>
-        <!-- お問い合わせ -->
-        <section id="section-contact" class="section-contact">
-          <div class="section-contact__container">
-            <h3><span>お問い合わせ</span></h3>
-            <div class="section-contact__disc">以下ボタンよりお問い合わせお願いします。</div>
-            <button>お問い合わせ</button>
+          <!-- 空間コーディネート料金 -->
+          <div class="section-price-list__card animate__animated animate__fadeIn" data-wow-duration="2s"">
+            <h4>空間コーディネート</h4>
+            <div class=" service-image"><img src="./assets/images/room-cordinate-stamp.png" alt=""></div>
+          <div class="spot-box">
+            <div class="spot ribbon">スポット</div>
+            <table>
+              <tr>
+                <td>1時間</td>
+                <td>3,000円<span>(税別)</span></td>
+              </tr>
+              <tr>
+                <td>1箇所</td>
+                <td>3,000円<span>(税別)</span></td>
+              </tr>
+              <tr>
+                <td>交通費</td>
+                <td>800円<span>(税別)</span></td>
+              </tr>
+            </table>
           </div>
-        </section>
+          <div class="attention">・家具の移動や運搬設置は本メニューに含まれておりません「その他」にて別途お見積となります。</div>
+      </div>
+      <!-- その他料金 -->
+      <div class="section-price-list__card animate__animated animate__fadeIn" data-wow-duration="2s">
+        <h4>その他</h4>
+        <div class="service-image"><img src="./assets/images/etc-stamp.png" alt=""></div>
+        <div class="etc-desc">別途お見積り</div>
+        <div class="attention">・メニューにないご要望については、ご相談ください。</div>
+      </div>
+      </div>
+      </section>
+
+
+      <!-- お客様からの声 -->
+      <section id="section-voice" class="section-voice">
+        <div class="section-voice__container">
+          <h3 class="animate__animated animate__fadeIn" data-wow-duration="2s">お客様からの声</h3>
+        </div>
+      </section>
+
+      <!-- お問い合わせ -->
+      <section id="section-contact" class="section-contact">
+        <div class="section-contact__container">
+          <h3 class="animate__animated animate__fadeIn" data-wow-duration="2s">お問い合わせ</h3>
+          <div class="section-contact__disc animate__animated animate__fadeIn" data-wow-duration="2s">
+            以下ボタンよりお問い合わせお願いします。</div>
+          <button>お問い合わせ</button>
+        </div>
+      </section>
       </div>
 
       <section class="section-footer">
@@ -264,6 +291,7 @@
             <li><a href="#section-about">さとごやについて</a></li>
             <li><a href="#section-services">サービス一覧</a></li>
             <li><a href="#section-price">ご利用料金</a></li>
+            <li><a href="#voice">お客様の声</a></li>
             <li><a href="#section-contact">お問い合わせ</a></li>
           </ul>
         </nav>
