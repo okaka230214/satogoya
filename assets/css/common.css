@@ -38,7 +38,8 @@ main {
 .section-greeting,
 .section-about,
 .section-services,
-.section-price-list
+.section-price-list,
+.section-voice
 {
   padding-left: 10vw;
   padding-right: 4vw;

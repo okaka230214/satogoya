@@ -379,10 +379,20 @@ table tr td:nth-of-type(2) span {
 font-size: 1.2rem;
 }
 
+
+/* お客様からの声 */
+
 #section-voice {
   margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
   padding-top: 80px; /* 打ち消し用のパディング */
 }
+
+.section-voice__container h3{
+  position: relative;
+  padding: 1.5rem;
+  margin-bottom: 56px;
+}
+
 
 .section-voice h3::before {
   position: absolute;
@@ -391,7 +401,7 @@ font-size: 1.2rem;
   width: 60px;
   height: 5px;
   content: '';
-  border-bottom: 4px dotted var(--color-white);
+  border-bottom: 4px dotted var(--color-base);
 }
 
 /* お問い合わせ */
@@ -401,6 +411,7 @@ font-size: 1.2rem;
   }
 .section-voice__container {
   position: relative;
+  margin-top: 100px;
 }
 .section-contact {
   color: #fff;
