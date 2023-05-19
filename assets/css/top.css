@@ -25,7 +25,7 @@ font-weight: var(--font-weight-bold);
 }
 .line {
   padding-bottom: 8px;
-  background: 
+  background:
       linear-gradient(rgb(230,130,52,0.6) 0 0) 
       bottom /var(--d, 0%) 3px
       no-repeat;
@@ -88,6 +88,8 @@ div.wrap-bg {
   min-height: 100%; /* 最小の高さ */
   background: var(--color-bg);
   height: auto;
+  position: relative;
+  z-index: -50;
 }
 
 /* あいさつ */
@@ -127,11 +129,28 @@ div.wrap-bg {
   margin-bottom: 16px;
   border-bottom: 1px solid var(--color-base);
 }
-
 #section-about > div > div.section-about__image > img {
   vertical-align: bottom;
   border-radius: 5px;
 }
+/* 写真の飾り */
+.section-about__image {
+  position: relative;
+}
+.section-about__image::before {
+  content: "";
+  position: absolute;
+  bottom: -64px;
+  right: -64px;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#999 30%, rgba(0, 0, 0, 0) 31%), radial-gradient(#999 30%, rgba(0, 0, 0, 0) 31%);
+  background-size: 6px 6px;
+  background-position: 0 0, 3px 3px;
+  z-index: -1;
+}
+
+
 
 /* サービス一覧 */
 #section-services{
@@ -536,5 +555,7 @@ button:hover {
 
 
 TODO:パララックスエフェクトかける
+TODO：写真の装飾をする
 TODO：ボタンの透過をやめ、アクションを付ける
 TODO:https://codepen.io/natszafraniec/pen/eYMPEaM
+TODO：SP版の実装

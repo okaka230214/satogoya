@@ -29,6 +29,8 @@
 head,
 body,
 main {
+  z-index: -100;
+  position: relative;
   background-color: #F2F2F2;
   width: 100%;
   color: #503730; /* RGB */
