@@ -381,19 +381,16 @@ font-size: 1.2rem;
 
 
 /* お客様からの声 */
-
 #section-voice {
   margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
   padding-top: 80px; /* 打ち消し用のパディング */
 }
 
-.section-voice__container h3{
+.section-voice__container h3 {
   position: relative;
   padding: 1.5rem;
   margin-bottom: 56px;
 }
-
-
 .section-voice h3::before {
   position: absolute;
   bottom: -10px;
@@ -409,13 +406,19 @@ font-size: 1.2rem;
   margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
   padding-top: 80px; /* 打ち消し用のパディング */
   }
-.section-voice__container {
-  position: relative;
-  margin-top: 100px;
-}
+
 .section-contact {
   color: #fff;
 }
+.section-contact__container {
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 100px;
+}
+
 .section-contact__container h3 {
 position: relative;
 padding: 1.5rem;
@@ -452,14 +455,7 @@ button {
 button:hover {
   opacity: 0.6;
 }
-.section-contact__container {
-  background-image: url(../images/bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding-top: 100px;
-}
+
 
 .section-footer__container {
   background-image: url(../images/bg.png);
