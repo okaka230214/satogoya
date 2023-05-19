@@ -79,6 +79,17 @@ text-shadow: 1px 2px 20px #808080;
   letter-spacing: 0.8rem;
 }
 
+.rectangle img{
+  vertical-align: bottom;
+}
+
+div.wrap-bg {
+  height: 100%;
+  min-height: 100%; /* 最小の高さ */
+  background: var(--color-bg);
+  height: auto;
+}
+
 /* あいさつ */
 .section-greeting__desc h2 {
   margin-top: -120px;
@@ -95,9 +106,7 @@ text-shadow: 1px 2px 20px #808080;
 
 
 /* さとごやについて */
-.section-about {
-  background-color: var(--color-bg);
-}
+
 .section-about__container {
   max-width: 1088px;
   margin: 0 auto;
@@ -128,7 +137,6 @@ text-shadow: 1px 2px 20px #808080;
 #section-services{
   margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
 padding-top: 80px;
-background-color: var(--color-bg);
 }
 #section-services > div > div > div > div.section-services__image > img
 {
@@ -251,7 +259,6 @@ background-color: var(--color-bg);
 #section-price {
   margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
 padding-top: 80px; /* 打ち消し用のパディング */
-background-color: var(--color-bg);
 }
 .section-price-list__container {
   max-width: 1088px;
