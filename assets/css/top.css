@@ -95,6 +95,9 @@ text-shadow: 1px 2px 20px #808080;
 
 
 /* さとごやについて */
+.section-about {
+  background-color: var(--color-bg);
+}
 .section-about__container {
   max-width: 1088px;
   margin: 0 auto;
@@ -125,6 +128,7 @@ text-shadow: 1px 2px 20px #808080;
 #section-services{
   margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
 padding-top: 80px;
+background-color: var(--color-bg);
 }
 #section-services > div > div > div > div.section-services__image > img
 {
@@ -247,6 +251,7 @@ padding-top: 80px;
 #section-price {
   margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
 padding-top: 80px; /* 打ち消し用のパディング */
+background-color: var(--color-bg);
 }
 .section-price-list__container {
   max-width: 1088px;
@@ -454,3 +459,9 @@ button:hover {
   font-size: 1.2rem;
   opacity: 0.8;
 }
+
+TODO: 背景色を入れる
+TODO:　三角の画像を作成する
+TODO: 文字と画像がふんわり現れるエフェクトかける
+TODO: フォントを見直す
+TODO:パララックスエフェクトかける
