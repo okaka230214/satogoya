@@ -154,7 +154,7 @@ div.wrap-bg {
 
 /* サービス一覧 */
 #section-services{
-  margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
+margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
 padding-top: 80px;
 }
 #section-services > div > div > div > div.section-services__image > img
@@ -163,7 +163,7 @@ padding-top: 80px;
   vertical-align: bottom;
 }
 .section-services__desc {
-  padding: 0 0 32px 0;
+  padding: 0 0 104px 0;
   text-align: center;
 }
 .section-service__wrapper {
@@ -182,7 +182,7 @@ padding-top: 80px;
   position: relative;
   padding-top: 6rem;
   padding-bottom: 1.5rem;
-  margin-bottom: 100px;
+  margin-bottom: 48px;
 }
 .section-services__container h3:before {
   position: absolute;
@@ -196,7 +196,7 @@ padding-top: 80px;
 }
 .section-services__service {
   display: flex;
-  padding-bottom: 96px;
+  padding-bottom: 104px;
 }
 
 .section-services__image {
@@ -264,6 +264,33 @@ padding-top: 80px;
 .section-services__service:nth-of-type(even) {
   flex-direction: row-reverse;
 }
+/* サービス写真の加工 */
+.section-service__img-wrapper {
+  position: relative;
+}
+.section-services__image::before,
+.section-services__image::after
+ {
+  content: "";
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 134px;
+  height: 55px;
+  background-color: #fff;
+  z-index: 1;
+}
+.section-services__image::before {
+  top: -12px;
+  left: -50px;
+  border-bottom: 1px solid #aaa;
+}
+.section-services__image::after {
+  bottom: -12px;
+  right: -50px;
+  border-top: 1px solid #aaa;
+}
+
+
 /* ギャラリー */
 .section-gallery {
   background-color: var(--color-white);
@@ -554,8 +581,7 @@ button:hover {
 }
 
 
-TODO:パララックスエフェクトかける
-TODO：写真の装飾をする
-TODO：ボタンの透過をやめ、アクションを付ける
-TODO:https://codepen.io/natszafraniec/pen/eYMPEaM
+TODO:タイトルのパララックスエフェクトと余白の見直し
+TODO：ボタンの透過をやめ、アクションを付けるhttps://jajaaan.co.jp/css/button/ 
+TODO:あしらいhttps://codepen.io/natszafraniec/pen/eYMPEaM
 TODO：SP版の実装
