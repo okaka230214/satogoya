@@ -75,7 +75,7 @@ text-shadow: 1px 2px 20px #808080;
   display: block;
   padding-left: 5vw;
   font-weight: var(--font-weight-thin);
-  font-size: 4.8rem;
+  font-size: var(--font-size-48);
   letter-spacing: 0.8rem;
 }
 
@@ -142,6 +142,10 @@ padding-top: 80px;
 {
   border-radius: 5px;
   vertical-align: bottom;
+}
+.section-services__desc {
+  padding: 0 0 32px 0;
+  text-align: center;
 }
 .section-service__wrapper {
   background-image: url(/assets/images/service-bg.png);
@@ -272,7 +276,7 @@ background-size: cover;
 background-position: center;
 }
 .section-price-list__card span {
-  font-size: 1rem;
+  font-size: var(--font-size-10);
 }
 .section-price-list__container {
   display: flex;
@@ -301,7 +305,7 @@ background-position: center;
   border-radius: 16px;
 }
 .section-price-list__card h4 {
-  font-size: 18px;
+  font-size: var(--font-size-18);
   text-align: center;
   display: block;
   padding: 1rem 2rem;
@@ -326,7 +330,7 @@ background-position: center;
   line-height: 40px;/*高さ*/
   text-align: center;
   padding: 0 40px 0 18px;/*文字の左右の余白*/
-  font-size: 18px;/*文字サイズ*/
+  font-size: var(--font-size-18);/*文字サイズ*/
   background: var(--color-green);/*背景色*/
   color: #FFF;/*文字色*/
   box-sizing: border-box;
@@ -376,7 +380,7 @@ table tr td:nth-of-type(2) span {
   font-weight:500;
 }
 .attention {
-font-size: 1.2rem;
+font-size: var(--font-size-12);
 }
 
 
@@ -385,7 +389,10 @@ font-size: 1.2rem;
   margin-top: -80px; /* 固定ナビの高さ分のネガティブマージン */
   padding-top: 80px; /* 打ち消し用のパディング */
 }
-
+.section-voice__container {
+max-width: 1088px;
+margin: 0 auto;
+}
 .section-voice__container h3 {
   position: relative;
   padding: 1.5rem;
@@ -400,6 +407,45 @@ font-size: 1.2rem;
   content: '';
   border-bottom: 4px dotted var(--color-base);
 }
+.section-voice__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section-voice__img-area {
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+
+}
+.section-voice__img-area span {
+  text-align: center;
+  font-size: var(--font-size-10);
+}
+.section-voice__comment {
+  top:0;
+  position: relative;
+  display: inline-block;
+  padding: 16px 40px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: var(--color-white);
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.section-voice__comment ::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: -30px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 15px solid var(--color-white);
+}
+
 
 /* お問い合わせ */
 #section-contact {
@@ -484,7 +530,7 @@ button:hover {
   display: block;
   text-align: center;
   padding-bottom: 8px;
-  font-size: 1.2rem;
+  font-size: var(--font-size-12);
   opacity: 0.8;
 }
 
