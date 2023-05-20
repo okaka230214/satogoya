@@ -49,6 +49,11 @@ position: relative;
   margin-inline: auto;
   overflow: hidden;
   height: 54vw;
+  display: none;
+}
+
+.hero-slide.slick-initialized{
+  display: block;
 }
 .section-top__container img {
   width: 100%;
@@ -365,11 +370,13 @@ background-position: center;
   display: flex;
   justify-content: center;
   margin-bottom: 32px;
+  width: 65%;
+  margin: 0 auto;
+  padding-bottom: 48px;
 }
 
 /* リボン */
 .ribbon {
-  margin-top: 16px;
   display: inline-block;
   position: relative;
   height: 40px;/*高さ*/
@@ -472,7 +479,7 @@ align-items: center;
   top:0;
   position: relative;
   display: inline-block;
-  padding: 16px 40px;
+  padding: 32px 64px;
   min-width: 120px;
   max-width: 100%;
   color: #555;
@@ -585,7 +592,4 @@ TODO:タイトルのパララックスエフェクトと余白の見直し
 TODO：ボタンの透過をやめ、アクションを付けるhttps://jajaaan.co.jp/css/button/ 
 TODO:あしらいhttps://codepen.io/natszafraniec/pen/eYMPEaM
 TODO：SP版の実装
-TODO:料金表のスタンプを小さくする
-/* width: 80%;
-    margin: 0 auto; */
 TODO:コメントエリアの吹き出しのパディングをもう少し多めにとる
