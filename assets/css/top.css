@@ -111,6 +111,69 @@ div.wrap-bg {
   z-index: 10000;
 }
 
+/* 装飾 */
+.link {
+	width: 64rem;
+	height: 10rem;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 0.1175em;
+	word-spacing: 0.3em;
+	text-decoration: none;
+}
+
+.link__svg {
+		width: 100%;
+		height: auto;
+		transform-box: fill-box;
+		fill: #2B3338;
+		stroke: #2B3338;
+		stroke-width: 0.05em;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+	}
+
+.link__cloud	 {
+		transform-origin: 50% 50%;
+		animation: rotate normal infinite 3 * 20s linear;
+		fill: rgba(255, 255, 255, 0.15);
+	}
+
+  /* .link__face {
+		transform-origin: 50% 50%;
+		transition: transform 0.3s / 2 cubic-bezier(0.32, 0, 0.67, 0) ;} */
+
+		.link:hover & {
+			transform: scale(1.1);
+			transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);;
+		}
+
+    .link__text {
+		animation: rotateReverse normal infinite 20s linear;
+		transform-origin: 50% 50%;}
+
+		.link:hover & {
+			animation-play-state: paused;
+		}
+
+    .link--alt {
+      font-size: 1.6rem;
+      letter-spacing: 1.5rem;
+      word-spacing: 0;}
+
+
+@keyframes rotate {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotateReverse {
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
 
 /* さとごやについて */
 
@@ -186,8 +249,8 @@ padding-top: 80px;
   display: block;
   position: relative;
   padding-top: 6rem;
-  padding-bottom: 1.5rem;
-  margin-bottom: 48px;
+  padding-bottom: 15px;
+  margin-bottom: 56px;
 }
 .section-services__container h3:before {
   position: absolute;
@@ -321,7 +384,7 @@ padding-top: 80px; /* 打ち消し用のパディング */
 }
 .section-price-list__card {
 background-image: url(../images/card-bg.png);
-padding: 48px 24px 48px 24px;
+padding: 48px 24px 64px 24px;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -550,9 +613,17 @@ button {
   text-align: center;
   margin: 10px 0;
   margin-bottom: 100px;
+  border-bottom: 5px solid #b84c00;
 }
-button:hover {
-  opacity: 0.6;
+
+button:active {
+  color: #fff;
+  background: #f56500;
+  border-bottom: 2px solid #b84c00;
+}
+.btn-shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 
 
@@ -589,7 +660,5 @@ button:hover {
 
 
 TODO:タイトルのパララックスエフェクトと余白の見直し
-TODO：ボタンの透過をやめ、アクションを付けるhttps://jajaaan.co.jp/css/button/ 
 TODO:あしらいhttps://codepen.io/natszafraniec/pen/eYMPEaM
 TODO：SP版の実装
-TODO:コメントエリアの吹き出しのパディングをもう少し多めにとる
