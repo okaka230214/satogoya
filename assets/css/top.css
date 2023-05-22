@@ -102,21 +102,25 @@ div.wrap-bg {
 /* あいさつ */
 .section-greeting {
   margin-bottom: 200px;
+  
+
 }
 
 .section-greeting__desc h2 {
-  margin-top: 80px;
+  margin-top: 160px;
   padding-bottom: 40px;
 }
 
 .section-greeting__desc {
   position:relative;
   z-index: 10000;
+
 }
 
 .section-greeting__container {
 display: flex;
 flex-direction: row;
+padding-left: 5vw;
 z-index: 100;
 }
 
@@ -133,7 +137,8 @@ z-index: 100;
 }
 
 .link__svg {
-		width: 100%;
+  margin-top: 140px;
+		width: 80%;
 		height: auto;
 		transform-box: fill-box;
 		fill: #2B3338;
@@ -632,7 +637,7 @@ margin-bottom: 56px;
 .section-contact__disc {
 padding-bottom: 40px;
 }
-button {
+.btn {
   font-family: var(--js-font-family);
   background-color:var(--color-orange);
   color: var(--color-white);
@@ -650,7 +655,7 @@ button {
   border-bottom: 5px solid #b84c00;
 }
 
-button:active {
+.btn:active {
   color: #fff;
   background: #f56500;
   border-bottom: 2px solid #b84c00;
@@ -692,10 +697,6 @@ button:active {
   opacity: 0.8;
 }
 
-
-/* TODO:タイトルのパララックスエフェクトと余白の見直し
-TODO:あしらいhttps://codepen.io/natszafraniec/pen/eYMPEaM
-TODO：SP版の実装 */
 
 .bg-font {
   text-align: right;

@@ -56,31 +56,3 @@ $(function () {
       },
     });
 });
-
-    /*** 料金業をPC版の時にはslicker発火しない ***/
-    $(function(){
-      function sliderSetting(){
-            var width = $(window).width();
-                  // console.log($(window).width());
-          if(width <= 1400){
-            // スマートフォンの場合
-            $('#section-price-list__slider').slick({
-              dots: true,
-              speed: 500,
-              arrows:false,
-              centerMode:true,
-              infinite:false
-            });
-                    // console.log("スマホ");
-          } else {
-              // pcの場合
-              $('.slick-box.onlysp.slick-initialized').slick('unslick');
-              // console.log("PC");
-          }
-      }
-      sliderSetting();
-    
-      $(window).resize( function() {
-          sliderSetting();
-      });
-  });
