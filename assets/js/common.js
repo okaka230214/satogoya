@@ -57,30 +57,30 @@ $(function () {
     });
 });
 
-
-// // gspa
-// gsap.to(".test-wrap .test", { //動かしたい対象
-//   duration: 3, //動かす内容
-//   paused: true,
-//   scale: 4,
-//   ease: "power2.out",
-//   width: "100%",
-//   height: "100px",
-//   lineHeight: "100px",
-//   borderRadius: "0%",
-//   top: 0,
-//   backgroundColor: "#E8E3DB",
-
-//   // y: 300,
-//   // rotate: 360,
-//   // scale: 10,
-//   // duration: 2,
-//   scrollTrigger:{
-//   markers:true,
-//   trigger: '.section-greeting__desc',//アニメーションが始まるトリガーとなる要素
-//     start: 'top center', //アニメーションが始まる位置を指定}
-//     end:'bottom top',
-//     scrub: true
-//   }
-//   });
-
+    /*** 料金業をPC版の時にはslicker発火しない ***/
+    $(function(){
+      function sliderSetting(){
+            var width = $(window).width();
+                  // console.log($(window).width());
+          if(width <= 1400){
+            // スマートフォンの場合
+            $('#section-price-list__slider').slick({
+              dots: true,
+              speed: 500,
+              arrows:false,
+              centerMode:true,
+              infinite:false
+            });
+                    // console.log("スマホ");
+          } else {
+              // pcの場合
+              $('.slick-box.onlysp.slick-initialized').slick('unslick');
+              // console.log("PC");
+          }
+      }
+      sliderSetting();
+    
+      $(window).resize( function() {
+          sliderSetting();
+      });
+  });

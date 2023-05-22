@@ -35,36 +35,34 @@ font-weight: 500;
 .line:hover {
   --d: 90%;
 }
-
 .header-container.scroll {
   background-color: rgba(255, 255, 255, 0.7);
   z-index: 1;
 }
+@media (max-width:1400px) {
+.navigation {
+  display:none;
+}
+}
+
 
 /* メインビジュアル */
 .section-top__container {
 position: relative;
 }
-
 .hero-slide {
   margin-inline: auto;
   overflow: hidden;
-  height: 54vw;
+  width: 100%;
+  height: auto;
   display: none;
 }
-
 .hero-slide.slick-initialized{
   display: block;
 }
 .section-top__container img {
   width: 100%;
   height: auto;
-}
-.section-top__disc {
-position: absolute;
-top:25%;
-color: var(--color-white);
-text-shadow: 1px 2px 20px #808080;
 }
 @keyframes zoomUp {
   0% {
@@ -78,17 +76,20 @@ text-shadow: 1px 2px 20px #808080;
   animation: zoomUp 10s linear 0s normal both;
 }
 .section-top__disc h1 {
+  display: flex;
+  position: absolute;
+  top:25%;
+  color: var(--color-white);
+  text-shadow: 1px 2px 20px #808080;
   display: block;
   padding-left: 5vw;
   font-weight: var(--font-weight-thin);
   font-size: var(--font-size-48);
   letter-spacing: 0.8rem;
 }
-
 .rectangle img{
   vertical-align: bottom;
 }
-
 div.wrap-bg {
   height: 100%;
   min-height: 100%; /* 最小の高さ */
@@ -104,7 +105,7 @@ div.wrap-bg {
 }
 
 .section-greeting__desc h2 {
-  margin-top: -120px;
+  margin-top: 80px;
   padding-bottom: 40px;
 }
 
@@ -185,7 +186,6 @@ z-index: 100;
 
 
 /* さとごやについて */
-
 .section-about__container {
   max-width: 1088px;
   margin: 0 auto;
@@ -226,6 +226,17 @@ z-index: 100;
   background-position: 0 0, 3px 3px;
   z-index: -1;
 }
+@media (max-width:1400px) {
+  .section-about__container {
+    flex-direction:column;
+    width: 100%;
+  }
+  .section-about__image,
+  .section-about__image img
+   {
+    width: 100px;
+  }
+}
 
 
 
@@ -248,7 +259,6 @@ padding-top: 80px;
   background-repeat: no-repeat;
   background-position: top;
 }
-
 .section-services__container {
   max-width: 1088px;
   margin: 0 auto;
@@ -275,7 +285,6 @@ padding-top: 80px;
   display: flex;
   padding-bottom: 104px;
 }
-
 .section-services__image {
   width:   50%;
   max-width: 554px;
@@ -284,12 +293,10 @@ padding-top: 80px;
   vertical-align: bottom;
   height: 100%;
 }
-
 .section-services__disc {
   max-width: 418px;
   margin: 0 auto;
 }
-
 .section-services__disc h4 {
   position: relative;
   padding: 1.5rem 1rem;
@@ -309,7 +316,6 @@ padding-top: 80px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
 .section-services__disc p {
   padding-bottom: 48px;
 }
@@ -370,6 +376,14 @@ padding-top: 80px;
   right: -50px;
   border-top: 1px solid #aaa;
 }
+@media (max-width:1400px) {
+  .section-services__service {
+flex-direction: column;
+  }
+  .section-service__img-wrapper img {
+    width: 100%;
+  }
+}
 
 
 /* ギャラリー */
@@ -377,7 +391,7 @@ padding-top: 80px;
   background-color: var(--color-white);
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-bottom:250px;
+  margin-bottom:180px;
   width: 100%;
   position: relative;
   z-index: 120000;
@@ -385,6 +399,12 @@ padding-top: 80px;
 
 .section-gallery__image img {
   vertical-align: bottom;
+}
+
+@media (max-width:1400px){
+  .bg-font {
+    display: none;
+  }
 }
 
 /* 料金表 */
@@ -410,7 +430,7 @@ background-position: center;
   display: flex;
   height: 100%;
   align-items: stretch;
-  margin-bottom: 384px;
+  margin-bottom: 180px;
   gap:10px;
 }
 .section-price-list h3 {
@@ -451,7 +471,6 @@ background-position: center;
   margin: 0 auto;
   padding-bottom: 48px;
 }
-
 /* リボン */
 .ribbon {
   display: inline-block;
@@ -513,6 +532,7 @@ table tr td:nth-of-type(2) span {
 font-size: var(--font-size-12);
 }
 
+@media (max-width:1400px){}
 
 /* お客様からの声 */
 #section-voice {
