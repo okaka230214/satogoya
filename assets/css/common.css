@@ -44,7 +44,8 @@ main {
 .section-about,
 .section-services,
 .section-price-list,
-.section-voice
+.section-voice,
+.section-gallery_bg
 {
   padding-left: 10vw;
   padding-right: 4vw;

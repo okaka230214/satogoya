@@ -20,8 +20,9 @@ top: 20px;
   }
 .navigation {
 display: inline-flex;
-gap:40px;
-font-weight: var(--font-weight-bold);
+gap:48px;
+font-size: 1.5rem;
+font-weight: 500;
 }
 .line {
   padding-bottom: 8px;
@@ -98,17 +99,24 @@ div.wrap-bg {
 }
 
 /* あいさつ */
+.section-greeting {
+  margin-bottom: 200px;
+}
+
 .section-greeting__desc h2 {
   margin-top: -120px;
   padding-bottom: 40px;
-}
-.section-greeting {
-  margin-bottom: 250px;
 }
 
 .section-greeting__desc {
   position:relative;
   z-index: 10000;
+}
+
+.section-greeting__container {
+display: flex;
+flex-direction: row;
+z-index: 100;
 }
 
 /* 装飾 */
@@ -120,6 +128,7 @@ div.wrap-bg {
 	letter-spacing: 0.1175em;
 	word-spacing: 0.3em;
 	text-decoration: none;
+  z-index: 100;
 }
 
 .link__svg {
@@ -183,7 +192,7 @@ div.wrap-bg {
   display: flex;
   gap:20%;
   align-items: center;
-  margin-bottom: 400px;
+  margin-bottom: 300px;
 }
 .section-about__desc {
   display: inline;
@@ -270,6 +279,10 @@ padding-top: 80px;
 .section-services__image {
   width:   50%;
   max-width: 554px;
+}
+.section-service__img-wrapper img{
+  vertical-align: bottom;
+  height: 100%;
 }
 
 .section-services__disc {
@@ -366,8 +379,9 @@ padding-top: 80px;
   padding-bottom: 32px;
   margin-bottom:250px;
   width: 100%;
+  position: relative;
+  z-index: 120000;
 }
-
 
 .section-gallery__image img {
   vertical-align: bottom;
@@ -659,6 +673,17 @@ button:active {
 }
 
 
-TODO:タイトルのパララックスエフェクトと余白の見直し
+/* TODO:タイトルのパララックスエフェクトと余白の見直し
 TODO:あしらいhttps://codepen.io/natszafraniec/pen/eYMPEaM
-TODO：SP版の実装
+TODO：SP版の実装 */
+
+.bg-font {
+  text-align: right;
+  font-size: 240px;
+  opacity: 0.5;
+  width: 100%;
+}
+
+.section-gallery_bg {
+  height: 200px;
+}
