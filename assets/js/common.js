@@ -99,14 +99,14 @@ function checkBreakPointGallery() {
 	} else {
 		// PC向け
 		$('.section-gallery__area').slick({
-      autoplay:true,
-      autoplaySpeed: 0,
-      arrows:false,
-      cssEase: 'linear',
-      infinite: true,
-      slidesToShow: 5,
-      slidesToScroll: 5,
-      speed: 8000,
+  autoplay:true,
+  autoplaySpeed: 0,
+  arrows:false,
+  cssEase: 'linear',
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  speed: 8000,
     });
 	}
 }
