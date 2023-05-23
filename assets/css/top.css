@@ -93,6 +93,13 @@ position: relative;
   font-size: var(--font-size-48);
   letter-spacing: 0.8rem;
 }
+@media (max-width:1400px) {
+  .section-top__disc h1 {
+    font-size: var(--font-size-32);
+  }
+}
+
+
 .rectangle img{
   vertical-align: bottom;
 }
@@ -184,6 +191,16 @@ z-index: 100;
     margin-top: 0px;
     width: 50%;
   }
+  .section-greeting__desc h2 {
+    margin-top: 80px;
+    padding-bottom: 24px;
+    font-size: 20px;
+  }
+  .link {
+    width: 100vw;}
+.section-greeting__desc p {
+  padding-bottom: 32px;
+}
 }
 
 
@@ -232,14 +249,41 @@ z-index: 100;
   .section-about__container {
     flex-direction:column;
     width: 100vw;
-    margin-bottom: 100px;
+
   }
   .section-about__image,
   .section-about__image img
    {
-    width: 50vw;
+    width: 80vw;
   }
+  .section-about__image {
+    margin-right: auto;
+  }
+  .section-about__image::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#999 30%, rgba(0, 0, 0, 0) 31%), radial-gradient(#999 30%, rgba(0, 0, 0, 0) 31%);
+    background-size: 6px 6px;
+    background-position: 0 0, 3px 3px;
+    z-index: -1;
+  }
+  .section-about {
+    margin-bottom: 80px;
+  }
+  .section-about__container {
+    padding-bottom: 32px;
+    width: 100%;
+  }
+
+
+
 }
+
+
 
 
 /* サービス一覧 */
@@ -389,6 +433,9 @@ flex-direction: column;
 .section-services__image::after {
   display: none;
 }
+.section-services {
+  background-color: #FFF;
+}
 }
 
 
@@ -411,7 +458,7 @@ flex-direction: column;
   .bg-font {
     display: none;
   }
-}
+
 
 /* 料金表 */
 #section-price {
