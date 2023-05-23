@@ -6,7 +6,7 @@
   font-size: 62.5%; /* 16px * 62.5% = 10px */
 
   /* TODO:あとで代替フォントを追加する */
-  --js-font-family: YakuHanJP,'DNP 秀英丸ゴシック Std','FOT-筑紫A丸ゴシック Std', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
+  --js-font-family: YakuHanJP,"dnp-shuei-mgothic-std", YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
   --color-white: #fff;
   --color-base:#503730;
   --color-orange:#E68234;
