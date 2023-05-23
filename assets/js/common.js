@@ -11,18 +11,6 @@ $(function (){
   });
 });
 
-// slick
-$('.section-gallery__area').slick({
-  autoplay:true,
-  autoplaySpeed: 0,
-  arrows:false,
-  cssEase: 'linear',
-  infinite: true,
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  speed: 8000,
-});
-
 $(function () {
   $(".hero-slide")
     // 最初のスライドに"add-animation"のclassを付ける(data-slick-index="0"が最初のスライドを指す)
@@ -80,3 +68,51 @@ $(window).resize(function(){
 });
 // 初回チェック
 checkBreakPoint();
+
+// PCのみギャラリー
+// $('.section-gallery__area').slick({
+//   autoplay:true,
+//   autoplaySpeed: 0,
+//   arrows:false,
+//   cssEase: 'linear',
+//   infinite: true,
+//   slidesToShow: 5,
+//   slidesToScroll: 1,
+//   speed: 8000,
+// });
+
+function checkBreakPointGallery() {
+	w = $(window).width();
+	if (w <= 1400) {
+		// スマホ向け
+		$('.section-gallery__area').not('.slick-initialized').slick({
+			//スライドさせる
+  autoplay:true,
+  autoplaySpeed: 0,
+  arrows:false,
+  cssEase: 'linear',
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 8000,
+		});
+	} else {
+		// PC向け
+		$('.section-gallery__area').slick({
+      autoplay:true,
+      autoplaySpeed: 0,
+      arrows:false,
+      cssEase: 'linear',
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      speed: 8000,
+    });
+	}
+}
+// ウインドウがリサイズする度にチェック
+$(window).resize(function(){
+	checkBreakPointGallery();
+});
+// 初回チェック
+checkBreakPointGallery();

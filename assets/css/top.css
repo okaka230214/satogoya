@@ -456,7 +456,11 @@ flex-direction: column;
 }
 .section-services__desc {
 padding-bottom: 56px;
-} }
+}
+.section-services__service:nth-of-type(even) {
+  flex-direction:column;
+}
+ }
 
 
 /* ギャラリー */
@@ -477,7 +481,14 @@ padding-bottom: 56px;
 @media (max-width:1400px){
   .bg-font {
     display: none;
-  }}
+  }
+.section-gallery_bg {
+  display: none;
+}
+.section-gallery {
+  margin-bottom:80px;
+}
+}
 
 
 /* 料金表 */
