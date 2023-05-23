@@ -879,3 +879,60 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* TODO: SEO対策
+TODO: ハンバーガメニュー */
+
+
+@media (max-width:1400px) {
+
+  .hmenu {
+    width: 48px;
+    height: 100%;
+  }
+
+  .h {
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 9999;
+  }
+
+  .h span {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: relative;
+    transition: ease .4s;
+    display: block;
+  }
+  
+  .h span:nth-child(1) {
+    top: 0;
+  }
+  
+  .h span:nth-child(2) {
+    margin: 8px 0;
+  }
+  
+  .h span:nth-child(3) {
+    top: 0;
+  }
+  .navigation.active {
+    transform: translateX(0);
+  }
+  
+  .h.active span:nth-child(1) {
+    top: 5px;
+    transform: rotate(45deg);
+  }
+  
+  .h.active span:nth-child(2) {
+    opacity: 0;
+  
+  }
+  
+  .h.active span:nth-child(3) {
+    top: -13px;
+    transform: rotate(-45deg);
+  } 
+}
