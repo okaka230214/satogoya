@@ -54,7 +54,7 @@ function checkBreakPoint() {
 			//スライドさせる
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			arrows: false,
+			arrows: true,
 			autoplay: false
 		});
 	} else {
