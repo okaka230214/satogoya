@@ -56,3 +56,28 @@ $(function () {
       },
     });
 });
+
+
+function checkBreakPoint() {
+	w = $(window).width();
+	if (w <= 1400) {
+		// スマホ向け
+		$('.section-price-list__container').not('.slick-initialized').slick({
+			//スライドさせる
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			arrows: true,
+			autoplay: true,
+			autoplaySpeed: 6000
+		});
+	} else {
+		// PC向け
+		$('.section-price-list__container.slick-initialized').slick('unslick');
+	}
+}
+// ウインドウがリサイズする度にチェック
+$(window).resize(function(){
+	checkBreakPoint();
+});
+// 初回チェック
+checkBreakPoint();
