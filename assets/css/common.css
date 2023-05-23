@@ -53,12 +53,6 @@ main {
 .section-top {
   padding-left: 10vw;
 }
-
-
-/* @media (min-width:) {
-  /* TODO:後で書く */
-/* } */
-
 a {
   text-decoration: none;
   display: inline-block;

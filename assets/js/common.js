@@ -64,11 +64,10 @@ function checkBreakPoint() {
 		// スマホ向け
 		$('.section-price-list__container').not('.slick-initialized').slick({
 			//スライドさせる
-			slidesToShow: 2,
+			slidesToShow: 1,
 			slidesToScroll: 1,
-			arrows: true,
-			autoplay: true,
-			autoplaySpeed: 6000
+			arrows: false,
+			autoplay: false
 		});
 	} else {
 		// PC向け

@@ -457,7 +457,7 @@ flex-direction: column;
 @media (max-width:1400px){
   .bg-font {
     display: none;
-  }
+  }}
 
 
 /* 料金表 */
@@ -585,7 +585,11 @@ table tr td:nth-of-type(2) span {
 font-size: var(--font-size-12);
 }
 
-@media (max-width:1400px){}
+@media (max-width:1400px){
+  .slick-track {
+    width: 100%;
+  }
+}
 
 /* お客様からの声 */
 #section-voice {
@@ -666,9 +670,6 @@ align-items: center;
   border-bottom: 15px solid #FFF;
   border-left: 15px solid transparent;
 }
-
-
-
 }
 
 
@@ -776,7 +777,6 @@ padding-bottom: 40px;
   }
 }
 
-
 .bg-font {
   text-align: right;
   font-size: 240px;
@@ -786,4 +786,26 @@ padding-bottom: 40px;
 
 .section-gallery_bg {
   height: 200px;
+}
+
+#section-price-list__slider {
+  position: relative;
+  width: 100%;
+}
+#section-price-list__slider .section-services__service {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section-services__service > .slick-list,
+.section-services__service > .slick-list > .slick-track,
+.section-services__service > .slick-list > .slick-track > .slick-slide > div {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
