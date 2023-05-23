@@ -50,6 +50,17 @@ main {
   padding-left: 10vw;
   padding-right: 4vw;
 }
+@media (max-width:1400px){
+.section-greeting,
+.section-about,
+.section-services,
+.section-price-list,
+.section-voice,
+.section-gallery_bg
+{
+  padding-left: 5vw;
+  padding-right: 5vw;
+}}
 .section-top {
   padding-left: 10vw;
 }
