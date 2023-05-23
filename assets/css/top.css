@@ -17,6 +17,8 @@ top: 20px;
   justify-content: space-between;
   position: fixed;
   z-index: 120000;
+  top:0; 
+  left:0;
   }
 .navigation {
 display: inline-flex;
@@ -43,6 +45,9 @@ font-weight: 500;
 .navigation {
   display:none;
 }
+.logo img {
+  width: 66px;
+}
 }
 
 
@@ -61,8 +66,9 @@ position: relative;
   display: block;
 }
 .section-top__container img {
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 80vh;
+  object-fit: cover;
 }
 @keyframes zoomUp {
   0% {
@@ -99,31 +105,26 @@ div.wrap-bg {
   z-index: -50;
 }
 
+
+
 /* あいさつ */
 .section-greeting {
   margin-bottom: 200px;
-  
-
-}
-
+  }
 .section-greeting__desc h2 {
   margin-top: 160px;
   padding-bottom: 40px;
 }
-
 .section-greeting__desc {
   position:relative;
   z-index: 10000;
-
 }
-
 .section-greeting__container {
 display: flex;
 flex-direction: row;
 padding-left: 5vw;
 z-index: 100;
 }
-
 /* 装飾 */
 .link {
 	width: 64rem;
@@ -135,7 +136,6 @@ z-index: 100;
 	text-decoration: none;
   z-index: 100;
 }
-
 .link__svg {
   margin-top: 140px;
 		width: 80%;
@@ -147,46 +147,43 @@ z-index: 100;
 		stroke-linecap: round;
 		stroke-linejoin: round;
 	}
-
 .link__cloud	 {
 		transform-origin: 50% 50%;
 		animation: rotate normal infinite 3 * 20s linear;
 		fill: rgba(255, 255, 255, 0.15);
 	}
-
-  /* .link__face {
-		transform-origin: 50% 50%;
-		transition: transform 0.3s / 2 cubic-bezier(0.32, 0, 0.67, 0) ;} */
-
 		.link:hover & {
 			transform: scale(1.1);
 			transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);;
 		}
-
     .link__text {
 		animation: rotateReverse normal infinite 20s linear;
 		transform-origin: 50% 50%;}
-
 		.link:hover & {
 			animation-play-state: paused;
 		}
-
     .link--alt {
       font-size: 1.6rem;
       letter-spacing: 1.5rem;
       word-spacing: 0;}
-
-
 @keyframes rotate {
 	to {
 		transform: rotate(360deg);
 	}
 }
-
 @keyframes rotateReverse {
 	to {
 		transform: rotate(-360deg);
 	}
+}
+@media (max-width:1400px) {
+  .section-greeting__container {
+    flex-direction: column;
+  }
+  .link__svg {
+    margin-top: 0px;
+    width: 50%;
+  }
 }
 
 
@@ -234,15 +231,15 @@ z-index: 100;
 @media (max-width:1400px) {
   .section-about__container {
     flex-direction:column;
-    width: 100%;
+    width: 100vw;
+    margin-bottom: 100px;
   }
   .section-about__image,
   .section-about__image img
    {
-    width: 100px;
+    width: 50vw;
   }
 }
-
 
 
 /* サービス一覧 */
@@ -388,6 +385,10 @@ flex-direction: column;
   .section-service__img-wrapper img {
     width: 100%;
   }
+  .section-services__image::before,
+.section-services__image::after {
+  display: none;
+}
 }
 
 
