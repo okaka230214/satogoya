@@ -194,13 +194,23 @@ z-index: 100;
     margin-top: 0px;
     width: 50%;
   }
+.link--alt {
+  width: 100%;
+  text-align: right;
+}
   .section-greeting__desc h2 {
-    margin-top: 80px;
-    padding-bottom: 24px;
+    margin-top: 32px;
+    padding-bottom: 8px;
     font-size: 20px;
   }
   .section-greeting__container {
     padding-left: 0px;
+  }
+  .sp-none {
+    display: none;
+  }
+  .section-greeting{
+    margin-bottom:56px
   }
 }
 
@@ -443,7 +453,10 @@ flex-direction: column;
 }
 .section-service__wrapper {
   background-image: none;
-}}
+}
+.section-services__desc {
+padding-bottom: 56px;
+} }
 
 
 /* ギャラリー */
