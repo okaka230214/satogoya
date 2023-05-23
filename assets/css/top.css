@@ -6,7 +6,10 @@ width: 120px;
 position: absolute;
 top: 20px;
 }
-.header-container { 
+.header__hamburger {
+  display: none;
+}
+.header-container {
   width:100%;
   background-color: #fff;
   padding-top: 1.5vw;
@@ -17,7 +20,7 @@ top: 20px;
   justify-content: space-between;
   position: fixed;
   z-index: 120000;
-  top:0; 
+  top:0;
   left:0;
   }
 .navigation {
@@ -885,54 +888,66 @@ TODO: ハンバーガメニュー */
 
 
 @media (max-width:1400px) {
+  /* ヘッダーのナビ部分 */
+.header__nav {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(100%); 
+  background-color: #fff; /*ハンバーガーメニュークリック時のナビゲーションメニュー背景色*/
+  transition: ease .4s; /*ハンバーガーメニュークリック時のナビゲーションメニュー出現を遅延*/
+}
+/* ハンバーガーメニュー */
+.header__hamburger {
+  display: inline-block;
+  width: 48px;
+  height: 100%;
+}
 
-  .hmenu {
-    width: 48px;
-    height: 100%;
-  }
+.hamburger {
+  background-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
+  border-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
+  z-index: 9999;
+}
+.hamburger span {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: relative;
+  transition: ease .4s; /*ハンバーガーメニュークリック時の三本線の動きを遅延*/
+  display: block;
+}
 
-  .h {
-    background-color: transparent;
-    border-color: transparent;
-    z-index: 9999;
-  }
+.hamburger span:nth-child(1) {
+  top: 0;
+}
 
-  .h span {
-    width: 100%;
-    height: 1px;
-    background-color: #000;
-    position: relative;
-    transition: ease .4s;
-    display: block;
-  }
-  
-  .h span:nth-child(1) {
-    top: 0;
-  }
-  
-  .h span:nth-child(2) {
-    margin: 8px 0;
-  }
-  
-  .h span:nth-child(3) {
-    top: 0;
-  }
-  .navigation.active {
-    transform: translateX(0);
-  }
-  
-  .h.active span:nth-child(1) {
-    top: 5px;
-    transform: rotate(45deg);
-  }
-  
-  .h.active span:nth-child(2) {
-    opacity: 0;
-  
-  }
-  
-  .h.active span:nth-child(3) {
-    top: -13px;
-    transform: rotate(-45deg);
-  } 
+.hamburger span:nth-child(2) {
+  margin: 8px 0;
+}
+
+.hamburger span:nth-child(3) {
+  top: 0;
+}
+* ハンバーガーメニュークリック後のスタイル */
+.header__nav.active {
+  transform: translateX(0);
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: -13px;
+  transform: rotate(-45deg);
+}
 }
