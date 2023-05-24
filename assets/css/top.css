@@ -520,6 +520,9 @@ flex-direction: column;
   .section-service__img-wrapper img {
     width: 100%;
   }
+  .section-services__image {
+    margin: 0 auto;
+  }
   .section-services__image::before,
 .section-services__image::after {
   display: none;
@@ -724,6 +727,7 @@ font-size: var(--font-size-12);
 }
 .section-price-list__card table {
   margin-top: 8px;
+  margin: 0 auto;
 }
 .section-price-list__card {
   padding-left:40px;
@@ -731,6 +735,14 @@ font-size: var(--font-size-12);
 }
 .section-price-list h3{
 margin-bottom: 56px;
+}
+.regular {
+  text-align: center;
+}
+.regular-box,
+.sopt-box,
+.spot-box {
+  text-align: center;
 }
 
 
