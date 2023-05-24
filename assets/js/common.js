@@ -150,3 +150,16 @@ $(function showSetting(){
     }
   });
 });
+
+
+// ローダ
+$(function () {
+  function end_loader() {
+    $('.loader').fadeOut(1000);
+  }
+  $(window).on('load', function () {
+    setTimeout(function () {
+      end_loader();
+    }, 2000)
+  })
+})
