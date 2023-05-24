@@ -133,7 +133,6 @@ ham.addEventListener('click', function addActive() {
 // メニューからリンクに飛んだらトグルをしまう
 // スマートフォンの場合
 $(document).on('click', '.nav-items__item', function(){
-  alert('Button is clicked');
   ham.classList.toggle('active');
   nav.classList.toggle('active');
 
