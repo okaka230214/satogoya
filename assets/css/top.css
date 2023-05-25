@@ -108,7 +108,7 @@ font-weight: 500;
   margin-bottom: 0;
 }
 .nav-items {
- padding-top: 10%;
+ padding-top: 20%;
   }
   .nav-items__item a {
     z-index: 10000;
@@ -116,11 +116,15 @@ font-weight: 500;
     width: 100%;
     text-align: center;
     font-size: 20px;
-    margin-bottom: 24px;
+    margin-bottom: 0px;
+  }
+  .nav-items__item {
+    padding-bottom: 0px;
   }
   .navigation {
     flex-direction: column;
     width: 100%;
+    gap: 64px;
   }
 }
 
