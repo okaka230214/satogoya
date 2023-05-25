@@ -160,6 +160,6 @@ $(function () {
   $(window).on('load', function () {
     setTimeout(function () {
       end_loader();
-    }, 2000)
+    }, 500)
   })
 })
