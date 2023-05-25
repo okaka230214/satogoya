@@ -56,7 +56,7 @@ font-weight: 500;
   left: 0;
   top: 0;
   width: 100%;
-  height: 99vh;
+  height: 100vh;
   transform: translateX(100vw);
   background-color: var(--color-white); /*ハンバーガーメニュークリック時のナビゲーションメニュー背景色*/
   transition: ease .4s; /*ハンバーガーメニュークリック時のナビゲーションメニュー出現を遅延*/
