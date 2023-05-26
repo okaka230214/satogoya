@@ -1,6 +1,17 @@
 @charset "UTF-8";
 
 /* ヘッダー */
+.sp-logo {
+  display: none;
+}
+@media (max-width:1400px) {
+  .sp-logo {
+    display: block;
+  width: 20vw;
+  margin: 0 auto;
+  }
+}
+
 .logo img {
 width: 120px;
 position: absolute;
@@ -108,7 +119,7 @@ font-weight: 500;
   margin-bottom: 0;
 }
 .nav-items {
- padding-top: 20%;
+ padding-top: 5%;
   }
   .nav-items__item a {
     z-index: 10000;
@@ -829,6 +840,9 @@ align-items: center;
   border-right: 15px solid transparent;
   border-bottom: 15px solid #FFF;
   border-left: 15px solid transparent;
+}
+.sp-notShow {
+  display: none;
 }
 }
 
