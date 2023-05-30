@@ -688,13 +688,22 @@ width: 168px;
   margin-bottom: 24px;
   text-align: center;
 }
+#section-price-list__slider > div:nth-child(2) > div.regular-box {
+  margin-bottom: 55px;
+}
 .spot-box {
-  margin-bottom: 8px;
+  margin-bottom: 40px;
   text-align: center
+}
+#section-price-list__slider > div:nth-child(2) > div.spot-box {
+  margin-bottom:72px;
+}
+#section-price-list__slider > div:nth-child(3) > div.spot-box {
+  margin-bottom:16px;
 }
 .etc-desc {
   font-weight: var(--font-weight-bold);
-  margin-top: 56px;
+  margin-top: -4px;
   margin-bottom: 8px;
 }
 
