@@ -710,10 +710,14 @@ font-size: var(--font-size-12);
 }
 
 @media (max-width:1400px){
-.slick-prev,.slick-next{
+/* .slick-prev,.slick-next{
   width: 40px;
   height: 40px;
+} */
+.section-price-list__container {
+  flex-wrap: wrap;
 }
+
 .service-image img {
   height: 20vh;
   width: auto;
@@ -721,22 +725,20 @@ font-size: var(--font-size-12);
 .section-price-list__card{
   padding-top: 32px;
   padding-bottom: 32px;
+  max-width: 350px;
 }
 .section-price-list__card h4{
   margin-bottom: 32px; 
 }
-  .slick-next{ 
+  /* .slick-next{ 
     right:0!important; }
   .slick-prev{ left:0!important; }
   .slick-arrow{ z-index:2!important; }
   .slick-prev:before, .slick-next:before {
     color: var(--color-base);
     opacity: 0.6;/*デフォルトは.75が指定されている*/
-    font-size: 32px;/*少し大きくする*/
-}
-.section-price-list__card {
-  height: 767px;
-}
+    /* font-size: 32px;少し大きくする */
+/* }  */
 .service-image img {
   padding-bottom: 32px;
 }
@@ -747,6 +749,7 @@ font-size: var(--font-size-12);
 .section-price-list__card {
   padding-left:40px;
   padding-right:40px;
+  height: auto;
 }
 .section-price-list h3{
 margin-bottom: 56px;
@@ -758,8 +761,12 @@ margin-bottom: 56px;
 .spot-box {
   text-align: center;
 }
-
-
+.etc-desc {
+  margin-top: 0px;
+}
+.spot {
+  margin-bottom: 16px;
+}
 }
 
 /* お客様からの声 */

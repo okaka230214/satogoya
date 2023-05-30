@@ -45,41 +45,32 @@ $(function () {
     });
 });
 
+// 料金表
 
-function checkBreakPoint() {
-	w = $(window).width();
-	if (w <= 1400) {
-		// スマホ向け
-		$('.section-price-list__container').not('.slick-initialized').slick({
-			//スライドさせる
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			arrows: true,
-			autoplay: false
-		});
-	} else {
-		// PC向け
-		$('.section-price-list__container.slick-initialized').slick('unslick');
-	}
-}
-// ウインドウがリサイズする度にチェック
-$(window).resize(function(){
-	checkBreakPoint();
-});
-// 初回チェック
-checkBreakPoint();
-
-// PCのみギャラリー
-// $('.section-gallery__area').slick({
-//   autoplay:true,
-//   autoplaySpeed: 0,
-//   arrows:false,
-//   cssEase: 'linear',
-//   infinite: true,
-//   slidesToShow: 5,
-//   slidesToScroll: 1,
-//   speed: 8000,
+// function checkBreakPoint() {
+// 	w = $(window).width();
+// 	if (w <= 1400) {
+// 		// スマホ向け
+// 		$('.section-price-list__container').not('.slick-initialized').slick({
+// 			//スライドさせる
+// 			slidesToShow: 1,
+// 			slidesToScroll: 1,
+// 			arrows: true,
+// 			autoplay: false
+// 		});
+// 	} else {
+// 		// PC向け
+// 		$('.section-price-list__container.slick-initialized').slick('unslick');
+// 	}
+// }
+// // ウインドウがリサイズする度にチェック
+// $(window).resize(function(){
+// 	checkBreakPoint();
 // });
+// // 初回チェック
+// checkBreakPoint();
+
+// ギャラリー
 
 function checkBreakPointGallery() {
 	w = $(window).width();
